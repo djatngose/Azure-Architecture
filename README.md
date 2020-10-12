@@ -1,5 +1,25 @@
-# AzureFundamental
+# Azure Fundamental
 This file describes the basic understanding info relating to azure architecture
+## Cloud concepts
+- Compute power - such as Linux servers or web applications used for computation and processing tasks
+- Storage - such as files and databases
+- Networking - such as secure connections between the cloud provider and your company
+- Analytics - such as visualizing telemetry and performance data
+### 1. Container (Docker)
+- Containers provide a consistent, isolated execution environment for applications.
+- They're similar to VMs except they don't require a guest operating system
+- Instead, the application and all its dependencies is packaged into a "container" and then a standard runtime environment is used to execute the app
+- This allows the container to start up in just a few seconds, because there's no OS to boot and initialize.You only need the app to launch
+- Multiple containers can be run on a single machine, and containers can be moved between machines
+### 2. Serverless computing
+- Serverless computing lets you run application code without creating, configuring, or maintaining a server
+- The core idea is that your application is broken into separate functions that run when triggered by some action
+- This is ideal for automated tasks - for example, you can build a serverless process that automatically sends an email confirmation after a customer makes an online purchase.
+- The serverless model differs from VMs and containers in that you only pay for the processing time used by each function as it executes
+- VMs and containers are charged while they're running - even if the applications on them are idle
+- This architecture doesn't work for every app - but when the app logic can be separated to independent units
+- You can test them separately, update them separately, and launch them in microseconds, making this approach the fastest option for deployment.
+
 ## Azure Billing
 https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/4-multiple-subscriptions
 ### 1. Azure subscription
@@ -19,9 +39,17 @@ https://docs.microsoft.com/en-us/learn/modules/create-an-azure-account/4-multipl
   - ExpressRoute is an Azure service that lets you create **private** connections between Microsoft **datacenters** and **infrastructure** that's on your premises or in a colocation facility
   - They offer higher security, reliability, and speeds, with lower and consistent latencies than typical connections over the Internet.
   - In some cases, using ExpressRoute connections to transfer data between on-premises devices and Azure can yield significant cost benefits.
+
 ## Cloud Security
 https://docs.microsoft.com/en-us/learn/modules/intro-to-security-in-azure/2-shared-responsibility
 
+## Services on Azure:
+  - `Compute services` such as VMs and containers that can run your applications
+  - `Database services` that provide both relational and NoSQL choices
+  - `Identity` services that help you authenticate and protect your users
+  - `Networking` services that connect your datacenter to the cloud, provide high availability or host your DNS domain
+  - `Storage` solutions that can accommodate massive amounts of both structured and unstructured data
+  - `AI and machine-learning services` can analyze data, text, images, comprehend speech, and make predictions using data — changing the world of agriculture, healthcare, and much more.
 
 ## References:
 - Microsoft Learning Docs: https://docs.microsoft.com/en-us/learn
